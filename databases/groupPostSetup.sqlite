@@ -1,0 +1,2 @@
+drop table if exists groupPosts;
+create table groupPosts (id integer primary key autoincrement, groupID text not null, posterUsername text not null, post text not null, timestamp text not null, likeIDs text);

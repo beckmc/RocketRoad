@@ -1,0 +1,2 @@
+drop table if exists messages;
+create table messages (id integer primary key autoincrement, toUser text not null, fromUser text not null, message text not null, timestamp text not null);

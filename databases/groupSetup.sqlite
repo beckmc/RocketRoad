@@ -1,0 +1,4 @@
+drop table if exists groups;
+create table groups (id integer primary key, name text unique not null, description text not null, members text, startDate text not null, endDate text not null);
+insert into groups (id, name, description, members, startDate, endDate) values ("111111", "test", "This is a test group right here", "pfaf", "1-1-1", "1-9-9");
+insert into groups (id, name, description, members, startDate, endDate) values (123456, "Balls", "A group about rockets and balls", "", "2001-9-11 08:01:00", "2001-9-11 10:20:03");

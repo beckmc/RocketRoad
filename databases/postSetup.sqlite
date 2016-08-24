@@ -1,0 +1,13 @@
+drop table if exists posts;
+create table posts (id integer primary key autoincrement, posterUsername text not null, post text not null, timestamp text not null, likeIDs text);
+insert into posts (id, posterUsername, post, timestamp) values (1, "averyharnish@gmail.com", "This is test post 1", "2016-04-15 05:55:39");
+insert into posts (id, posterUsername, post, timestamp) values (2, "averyharnish@gmail.com", "Another test post", "2016-04-21 21:28:47");
+insert into posts (id, posterUsername, post, timestamp) values (3, "blauk@lafayette.edu", "We have number 3", "2016-04-10 11:15:34");
+insert into posts (id, posterUsername, post, timestamp) values (4, "beckmc@lafayette.edu", "Another test", "2016-04-10 22:15:34");
+insert into posts (id, posterUsername, post, timestamp) values (5, "blauk@lafayette.edu", "Random text", "2016-04-10 12:15:34");
+insert into posts (id, posterUsername, post, timestamp) values (6, "beckmc@lafayette.edu", "This can be as long or short as we want it to so let's see how a really long post goes ok'", "2016-04-10 11:15:34");
+insert into posts (id, posterUsername, post, timestamp) values (7, "pfaffmaj@lafayette.edu", "Ok", "2016-04-10 11:56:34");
+insert into posts (id, posterUsername, post, timestamp) values (8, "pfaffmaj@lafayette.edu", "I like skiing", "2016-04-10 11:30:34");
+insert into posts (id, posterUsername, post, timestamp) values (9, "blauk@lafayette.edu", "This is going to be even longer foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar", "2016-04-10 11:15:12");
+insert into posts (id, posterUsername, post, timestamp) values (10, "blauk@lafayette.edu", "Short post", "2016-04-10 11:15:47");
+insert into posts (id, posterUsername, post, timestamp) values (11, "blauk@lafayette.edu", "lol", "2016-04-10 11:15:56");

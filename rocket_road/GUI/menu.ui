@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Menu</class>
+ <widget class="QMainWindow" name="Menu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QSplitter" name="splitter">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>761</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QPushButton" name="newsFeed">
+     <property name="text">
+      <string>News Feed</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="friends">
+     <property name="text">
+      <string>Friends</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="messages">
+     <property name="text">
+      <string>Messages</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="groups">
+     <property name="text">
+      <string>Groups</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="myProfile">
+     <property name="text">
+      <string>My Profile</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="search">
+     <property name="text">
+      <string>Search</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="logout">
+     <property name="text">
+      <string>Log Out</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,48 @@
+#ifndef USER_H
+#define USER_H
+#include <iostream>
+#include <string>
+#include <vector>
+#include <sstream>
+
+#include "group.h"
+
+class Group;
+
+class User
+{
+public:
+    User(std::string user_name, std::string email, std::string first_name, std::string last_name, std::string groups, std::string friends, std::string password, std::string profile_picture, int user_ID);
+    ~User();
+    bool setFirstName(std::string new_name);
+    bool setLastName(std::string new_name);
+    bool setPassword(std::string new_pass);
+    bool tryPassword(std::string pass);
+    bool addGroup(Group* group);
+    bool removeGroup(Group* group);
+    std::vector<std::string> getGroups();
+    std::vector<std::string> getPosters();
+    std::vector<std::string> getFriends();
+    std::string getFriendString();
+    int getID();
+    std::string getUserName();
+    std::string getName();
+    bool isFriend(User* other_user);
+    bool addFriend(User* user);
+    bool removeFriend(User* user);
+    bool isMember(std::string groupID);
+private:
+    bool logged_in_;
+    int user_ID_;
+    std::string user_name_;
+    std::string email_;
+    std::string first_name_;
+    std::string last_name_;
+    std::string friends_;
+    std::string password_;
+    std::string profile_picture_;
+    void setFriendString(std::string new_string);
+    std::string groups_;
+};
+
+#endif // USER_H

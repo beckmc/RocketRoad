@@ -1,0 +1,2 @@
+drop table if exists comments;
+create table comments (id integer primary key autoincrement, postID text not null, posterUsername text not null, comment text not null, timestamp text not null);

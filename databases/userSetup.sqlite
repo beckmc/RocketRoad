@@ -1,0 +1,12 @@
+drop table if exists users;
+create table users (id integer primary key autoincrement, email text unique not null, firstName text not null, lastName text not null, password text not null, groups text, friends text, picture text);
+insert into users (id, email, firstName, lastName, password, friends, picture) values (100, "averyharnish@gmail.com", "Avery", "Harnish", "password1234", "beckmc@lafayette.edu,pfaf", "p_pic123.jpg");
+insert into users (id, email, firstName, lastName, password, picture) values (101, "blauk@lafayette.edu", "Kris", "Blau", "i_am_bad", "p_pic321.jpg");
+insert into users (id, email, firstName, lastName, password, friends, picture) values (102, "beckmc@lafayette.edu", "Matthew", "Beck", "testPass", "blauk@lafayette.edu", "p_pic432.jpg");
+insert into users (id, email, firstName, lastName, password, groups, friends, picture) values (103, "pfaf", "J", "Pfaffman", "pass", "111111", "blauk@lafayette.edu,averyharnish@gmail.com", "p_pic999.jpg");
+insert into users (id, email, firstName, lastName, password, friends, picture) values (104, "testA", "Aaron", "User", "pass", "blauk@lafayette.edu,averyharnish@gmail.com,beckmc@lafayette.edu", "default.jpg");
+insert into users (id, email, firstName, lastName, password, friends, picture) values (105, "testB", "Jack", "Rogers", "pass", "blauk@lafayette.edu,averyharnish@gmail.com,beckmc@lafayette.edu", "default.jpg");
+insert into users (id, email, firstName, lastName, password, friends, picture) values (106, "testC", "Tony", "Stark", "pass", "blauk@lafayette.edu,averyharnish@gmail.com,beckmc@lafayette.edu", "default.jpg");
+insert into users (id, email, firstName, lastName, password, friends, picture) values (107, "testD", "Jeff", "Bridges", "pass", "blauk@lafayette.edu,averyharnish@gmail.com,beckmc@lafayette.edu", "default.jpg");
+insert into users (id, email, firstName, lastName, password, friends, picture) values (108, "testE", "Chun Wai", "Liew", "pass", "blauk@lafayette.edu,averyharnish@gmail.com,beckmc@lafayette.edu", "default.jpg");
+insert into users (id, email, firstName, lastName, password, friends, picture) values (109, "testF", "Ge", "Xia", "pass", "blauk@lafayette.edu,averyharnish@gmail.com,beckmc@lafayette.edu,testA,testB,testC,testD,testE,testF", "default.jpg");

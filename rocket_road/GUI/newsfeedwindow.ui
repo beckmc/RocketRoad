@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NewsFeedWindow</class>
+ <widget class="QMainWindow" name="NewsFeedWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1900</width>
+    <height>1280</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>NewsFeed</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>70</y>
+      <width>761</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOn</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOn</enum>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustToContents</enum>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>746</width>
+       <height>476</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QSplitter" name="splitter">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>761</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QPushButton" name="newsFeed">
+     <property name="text">
+      <string>News Feed</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="friends">
+     <property name="text">
+      <string>Friends</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="messages">
+     <property name="text">
+      <string>Messages</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="groups">
+     <property name="text">
+      <string>Groups</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="myProfile">
+     <property name="text">
+      <string>My Profile</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="search">
+     <property name="text">
+      <string>Search</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="logout">
+     <property name="text">
+      <string>Log Out</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
